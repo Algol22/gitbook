@@ -1,8 +1,8 @@
 # Table of contents
 
-* [S2S](README.md)
-  * [CARD Guide](s2s/card-guide.md)
-  * [Card Requests](s2s/card-requests.md)
+* [S2S Card](README.md)
+* [Card Requests](card-requests.md)
+* [CARD Guide](card-guide.md)
 
 ## Basics
 
