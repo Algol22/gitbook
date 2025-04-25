@@ -3178,7 +3178,7 @@ curl -d "action=CREDIT2VIRTUAL
 
 </details>
 
-#### zeropay (BTC Globals)
+### zeropay (BTC Globals)
 
 If you set the value “zeropay” for the `brand` parameter you have to specify in your request the next parameters as well:
 
