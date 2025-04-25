@@ -1,10 +1,16 @@
 # Table of contents
 
-## S2S Card
+## S2S
 
-* [S2S Card Guide](README.md)
+* [S2S CARD](README.md)
+* [S2S APM](s2s/s2s-apm.md)
 
 ## Checkout
 
-* [Interactive blocks](checkout/interactive-blocks.md)
+* [Checkout Integration](checkout/checkout-integration.md)
 * [Checkout Requests](checkout/openapi.md)
+
+***
+
+* [PLUGINS](plugins.md)
+* [SDK CHECKOUT](sdk-checkout.md)
