@@ -306,7 +306,7 @@ payer_city=City&payer_zip=123456&payer_email=doe@example.com
 
 </details>
 
-#### billplz
+## billplz
 
 Take into account that `payer_first_name` and `payer_last_name` parameters are required for this brand.\
 If you set the `billplz` value for the brand parameter you have to specify in your request the next parameters as well:
@@ -332,7 +332,7 @@ hash=2702ae0c4f99506dc29b5615ba9ee3c0" https://test.apiurl.com –k
 
 </details>
 
-#### dl
+## dl
 
 If you set the value `dl` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -355,7 +355,7 @@ hash=2702ae0c4f99506dc29b5615ba9ee3c0" https://test.apiurl.com –k
 
 </details>
 
-#### dlocal
+## dlocal
 
 If you set the value `dlocal` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -378,7 +378,7 @@ hash=2702ae0c4f99506dc29b5615ba9ee3c0" https://test.apiurl.com –k
 
 </details>
 
-#### doku-hpp
+## doku-hpp
 
 If the payer chooses the `doku-hpp` payment method, the redirection to another page will happen to finish the payment.\
 You can add to the Authentication request a specific list of parameters which may be required for the `doku-hpp` payment method.
@@ -404,7 +404,7 @@ curl -d "action=SALE&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&brand=doku-
 
 </details>
 
-#### fairpay
+## fairpay
 
 If you set the value `fairpay` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -426,7 +426,7 @@ curl -d "action=SALE&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&brand=fairp
 
 </details>
 
-#### Google Pay
+## Google Pay
 
 To provide the payers with the possibility of Google Pay™ payment you can connect to the Checkout or work directly via S2S APM protocol.\
 Before using `googlepay` payment method, you should review this section carefully to meet all the Google Pay™ requirements:
@@ -565,7 +565,7 @@ The “Private Key” is required for Google token decryption. If it is absent, 
 \
 Additionally, to work with Google Pay payments, you must verify the website domains from which Google Pay is processed in the Google Business Console.
 
-#### hayvn
+## hayvn
 
 | **Parameter**      | **Description**                                                                                                       | **Values** | **Required** |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------- | ---------- | :----------: |
@@ -587,7 +587,7 @@ payer_city=City&payer_zip=123456&payer_email=doe@example.com
 
 </details>
 
-#### hayvn-wdwl
+## hayvn-wdwl
 
 | **Parameter** | **Description**                                                  | **Values** | **Required** |
 | ------------- | ---------------------------------------------------------------- | ---------- | :----------: |
@@ -613,7 +613,7 @@ parameters[address]= tb1qz8xs2xrun82tzaug9uaj206p34l3eu0tjw52qd
 
 </details>
 
-#### m2p-debit
+## m2p-debit
 
 If you set the value `m2p-debit` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -638,7 +638,7 @@ curl -d "action=SALE&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&brand=m2p-d
 
 </details>
 
-#### m2p-withdrawal
+## m2p-withdrawal
 
 If you set the value `m2m-withdrawal` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -663,7 +663,7 @@ curl -d "action=SALE&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&brand=m2p-w
 
 </details>
 
-#### pagsmile
+## pagsmile
 
 If you set the value `pagsmile` for the brand parameter you have to specify in your request the next parameters. The following parameters are required, except for transactions in Guatemala, Panama, or Costa Rica:
 
@@ -690,7 +690,7 @@ hash=2702ae0c4f99506dc29b5615ba9ee3c0" https://test.apiurl.com –k
 
 </details>
 
-#### payok-upi
+## payok-upi
 
 If you set the value `payok-upi` for the brand parameter you have to specify in your request the next parameter required for India:
 
@@ -714,7 +714,7 @@ hash=2702ae0c4f99506dc29b5615ba9ee3c0" https://test.apiurl.com –k
 
 </details>
 
-#### paythrough-upi
+## paythrough-upi
 
 If you set the value `paythrough-upi` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -738,7 +738,7 @@ curl -d "action=SALE&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&brand=payth
 
 </details>
 
-#### ptn-email
+## ptn-email
 
 If you set the value `ptn-email` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -765,7 +765,7 @@ parameters[SecurityQuestionAnswer]=red
 
 </details>
 
-#### ptn-sms
+## ptn-sms
 
 If you set the value `ptn-sms` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -792,7 +792,7 @@ parameters[SecurityQuestionAnswer]=red
 
 </details>
 
-#### pyk-bkmexpress
+## pyk-bkmexpress
 
 If you set the value `pyk-bkmexpress` for the brand parameter you have to specify in your request the next parameter required for Turkey:
 
@@ -802,7 +802,7 @@ If you set the value `pyk-bkmexpress` for the brand parameter you have to specif
 | `accountName`   | _String_ | Conditional   |  <p>Payer's name, length 1~64 characters; Example: Colin Ford. Must be exactly the same as the actual payer's name.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Turkey, then it will be collected on the Checkout page</p> |
 | `accountNumber` | _String_ | Conditional   | <p>Payer's Institution (Bank) account number. Must be exactly the same as the account number of the actual payment.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Turkey, then it will be collected on the Checkout page</p> |
 
-#### pyk-momo
+## pyk-momo
 
 If you set the value `pyk-momo` for the brand parameter you have to specify in your request the next parameter required for Vietnam:
 
@@ -810,7 +810,7 @@ If you set the value `pyk-momo` for the brand parameter you have to specify in y
 | ------------- | -------- | ------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | `personal_id` | _String_ | Conditional   | <p>Payer's Identity ID.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Vietnam, then it will be collected on the Checkout page</p> |
 
-#### pyk-nequipush
+## pyk-nequipush
 
 If you set the value `pyk-nequipush` for the brand parameter you have to specify in your request the next parameter required for Colombia:
 
@@ -818,7 +818,7 @@ If you set the value `pyk-nequipush` for the brand parameter you have to specify
 | ------------- | -------- | ------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | `personal_id` | _String_ | Conditional   | <p>Payer's Identity ID.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Colombia, then it will be collected on the Checkout page</p> |
 
-#### pyk-paparawallet
+## pyk-paparawallet
 
 If you set the value `pyk-paparawallet` for the brand parameter you have to specify in your request the next parameter required for Turkey:
 
@@ -828,7 +828,7 @@ If you set the value `pyk-paparawallet` for the brand parameter you have to spec
 | `accountName`   | _String_ | Conditional   |  <p>Payer's name, length 1~64 characters; Example: Colin Ford. Must be exactly the same as the actual payer's name.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Turkey, then it will be collected on the Checkout page</p> |
 | `accountNumber` | _String_ | Conditional   | <p>Payer's Institution (Bank) account number. Must be exactly the same as the account number of the actual payment.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Turkey, then it will be collected on the Checkout page</p> |
 
-#### pyk-promptpay
+## pyk-promptpay
 
 If you set the value `pyk-promptpay` for the brand parameter you have to specify in your request the next parameter required for Thailand:
 
@@ -838,7 +838,7 @@ If you set the value `pyk-promptpay` for the brand parameter you have to specify
 | `accountName`   | _String_ | Conditional   |  <p>Payer's name, length 1~64 characters; Example: Colin Ford. Must be exactly the same as the actual payer's name.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Thailand, then it will be collected on the Checkout page</p> |
 | `accountNumber` | _String_ | Conditional   | <p>Payer's Institution (Bank) account number. Must be exactly the same as the account number of the actual payment.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Thailand, then it will be collected on the Checkout page</p> |
 
-#### pyk-truemoney
+## pyk-truemoney
 
 If you set the value `pyk-truemoney` for the brand parameter you have to specify in your request the next parameter required for Thailand:
 
@@ -848,7 +848,7 @@ If you set the value `pyk-truemoney` for the brand parameter you have to specify
 | `accountName`   | _String_ | Conditional   |  <p>Payer's name, length 1~64 characters; Example: Colin Ford. Must be exactly the same as the actual payer's name.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Thailand, then it will be collected on the Checkout page</p> |
 | `accountNumber` | _String_ | Conditional   | <p>Payer's Institution (Bank) account number. Must be exactly the same as the account number of the actual payment.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Thailand, then it will be collected on the Checkout page</p> |
 
-#### pyk-upi
+## pyk-upi
 
 If you set the value `pyk-upi` for the brand parameter you have to specify in your request the next parameter required for India:
 
@@ -872,7 +872,7 @@ hash=2702ae0c4f99506dc29b5615ba9ee3c0" https://test.apiurl.com –k
 
 </details>
 
-#### pyk-viettelpay
+## pyk-viettelpay
 
 If you set the value `pyk-viettelpay` for the brand parameter you have to specify in your request the next parameter required for Vietnam:
 
@@ -880,7 +880,7 @@ If you set the value `pyk-viettelpay` for the brand parameter you have to specif
 | ------------- | -------- | ------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | `personal_id` | _String_ | Conditional   | <p>Payer's Identity ID.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Vietnam, then it will be collected on the Checkout page</p> |
 
-#### pyk-zalopay
+## pyk-zalopay
 
 If you set the value `pyk-zalopay` for the brand parameter you have to specify in your request the next parameter required for Vietnam:
 
@@ -888,7 +888,7 @@ If you set the value `pyk-zalopay` for the brand parameter you have to specify i
 | ------------- | -------- | ------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | `personal_id` | _String_ | Conditional   | <p>Payer's Identity ID.<br><strong>Condition:</strong> If the parameter is NOT specified in the request for Vietnam, then it will be collected on the Checkout page</p> |
 
-#### sz-in-upi
+## sz-in-upi
 
 If you set the value `sz-in-upi` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -909,7 +909,7 @@ curl -d "action=SALE&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&brand=sz-in
 
 </details>
 
-#### tabby
+## tabby
 
 If you set the value `tabby` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -936,7 +936,7 @@ curl -d "action=SALE&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&brand=tabby
 
 </details>
 
-#### tamara
+## tamara
 
 If you set the value `tamara` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -968,7 +968,7 @@ curl -d "action=SALE&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004
 
 </details>
 
-#### yapily
+## yapily
 
 If you set the value `yapily` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -991,7 +991,7 @@ curl -d "action=SALE&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&brand=yapil
 
 </details>
 
-#### yo-uganda-limited
+## yo-uganda-limited
 
 If you set the value `yo-uganda-limited` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1029,7 +1029,7 @@ You have to add to your CREDIT2VIRTUAL request specific list of parameters which
 
 You should get additional information from account manager.
 
-#### airtel
+## airtel
 
 If you set the value `airtel` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1051,7 +1051,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### astropay
+## astropay
 
 If you set the value `astropay` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1074,7 +1074,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### bitolo (INR)
+## bitolo (INR)
 
 If you set the value `bitolo-inr` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1096,7 +1096,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### bitolo (BRL)
+## bitolo (BRL)
 
 If you set the value `bitolo-brl` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1124,7 +1124,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### fairpay
+## fairpay
 
 If you set the value `fairpay` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1158,7 +1158,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004
 
 </details>
 
-#### jvz
+## jvz
 
 If you set the value `jvz` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1196,7 +1196,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### help2pay
+## help2pay
 
 If you set the value `help2pay` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1223,7 +1223,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### mercury
+## mercury
 
 If you set the value `mercury` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1263,7 +1263,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### mpesa
+## mpesa
 
 If you set the value `mpesa` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1284,7 +1284,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### noda
+## noda
 
 If you set the value `noda` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1305,7 +1305,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### one-collection
+## one-collection
 
 If you set the value "one-collection" for the `brand` parameter you have to specify in your request the next parameters as well:
 
@@ -1337,7 +1337,7 @@ X4LNOND7jC5El3xSyfGdmkcZS8g0EO+EmPQAxpcZ8goBJ4uOINtNJWgo0aGOsUZd4jkzT6za8TOyLAw=
 
 </details>
 
-#### papara
+## papara
 
 If you set the value `papara` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1357,7 +1357,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### Paygate10 Netbanking/UPI
+## Paygate10 Netbanking/UPI
 
 If you set the value `netbanking-upi` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1387,7 +1387,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### payneteasyhpp
+## payneteasyhpp
 
 If you set the value `payneteasyhpp` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1422,7 +1422,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004
 
 </details>
 
-#### payftr-in
+## payftr-in
 
 If you set the value `payftr-in` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1460,7 +1460,7 @@ curl -d "action=CREDIT2VIRTUAL
 
 </details>
 
-#### payok-payout
+## payok-payout
 
 If you set the value `payok-payout` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1493,7 +1493,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### paytota (MTN)
+## paytota (MTN)
 
 If you set the value `paytota` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1513,7 +1513,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### payretailers
+## payretailers
 
 If you set the value `payretailers` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1570,7 +1570,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### ptn-email
+## ptn-email
 
 If you set the value `ptn-email` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1597,7 +1597,7 @@ parameters[SecurityQuestionAnswer]=red
 
 </details>
 
-#### ptn-sms
+## ptn-sms
 
 If you set the value `ptn-sms` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1624,7 +1624,7 @@ hash=a1a6de416405ada72bb47a49176471dc" https://test.apiurl.com/post -k
 
 </details>
 
-#### pyk-payout
+## pyk-payout
 
 If you set the value `pyk-payout` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1657,7 +1657,7 @@ curl -d "action=CREDIT2VIRTUAL&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&b
 
 </details>
 
-#### yo-uganda-limited
+## yo-uganda-limited
 
 If you set the value `yo-uganda-limited` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1683,7 +1683,7 @@ ADH7BAGR0RGuAAAAAElFTkSuQmCC&parameters[ProviderReferenceText]=thank you &hash=a
 
 </details>
 
-#### winnerpay
+## winnerpay
 
 If you set the value `winnerpay` for the brand parameter you have to specify in your request the next parameters as well:
 
@@ -1712,7 +1712,7 @@ curl -d "action=CREDIT2VIRTUAL
 
 </details>
 
-#### zeropay (BTC Globals)
+## zeropay (BTC Globals)
 
 If you set the value “zeropay” for the `brand` parameter you have to specify in your request the next parameters as well:
 
@@ -1746,7 +1746,7 @@ You have to add to your CREDIT2CRYPTO request specific list of parameters which 
 
 You should get additional information from account manager.
 
-#### crypto-btg
+## crypto-btg
 
 If you set the value `crypto-btg` for the brand parameter you have to specify in your request the next parameters as well:
 
