@@ -1,3 +1,7 @@
+---
+icon: puzzle-piece-simple
+---
+
 # PLUGINS
 
 ***

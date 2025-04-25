@@ -10,7 +10,7 @@
 * [Checkout Integration](checkout/checkout-integration.md)
 * [Checkout Requests](checkout/openapi.md)
 
-***
+## Tools
 
-* [PLUGINS](plugins.md)
-* [SDK CHECKOUT](sdk-checkout.md)
+* [SDK CHECKOUT](tools/sdk-checkout.md)
+* [PLUGINS](tools/plugins.md)
