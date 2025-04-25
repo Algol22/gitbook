@@ -9,7 +9,47 @@ You can sync GitBook pages with an OpenAPI or Swagger file or a URL to include a
 ```csharp
 ```
 
-{% tabs %}
+{% tabs fullWidth="true" %}
+{% tab title="Java OkHttp" %}
+```java
+OkHttpClient client = new OkHttpClient().newBuilder()
+  .build();
+MediaType mediaType = MediaType.parse("text/plain");
+RequestBody body = new MultipartBody.Builder().setType(MultipartBody.FORM)
+  .addFormDataPart("action","SALE")
+  .addFormDataPart("client_key","09f6e0a8-ff62-11ef-8b15-0242ac120006")
+  .addFormDataPart("order_id","1745608325withdrawal")
+  .addFormDataPart("order_amount","1.01")
+  .addFormDataPart("order_currency","USD")
+  .addFormDataPart("order_description","wine")
+  .addFormDataPart("card_number","4601541833776519")
+  .addFormDataPart("card_exp_month","01")
+  .addFormDataPart("card_exp_year","2025")
+  .addFormDataPart("card_cvv2","123")
+  .addFormDataPart("payer_first_name","John")
+  .addFormDataPart("payer_last_name","Rickher")
+  .addFormDataPart("payer_middle_name","Patronimicffffffffff")
+  .addFormDataPart("payer_birth_date","1970-10-10")
+  .addFormDataPart("payer_address","Shevchenko 1")
+  .addFormDataPart("payer_address2","address")
+  .addFormDataPart("payer_country","UA")
+  .addFormDataPart("payer_state","Kyiv")
+  .addFormDataPart("payer_city","Kyiv")
+  .addFormDataPart("payer_zip","1234")
+  .addFormDataPart("payer_email","test@gmail.com")
+  .addFormDataPart("payer_phone","+38981234567")
+  .addFormDataPart("payer_ip","23.129.64.182")
+  .addFormDataPart("term_url_3ds","https://asdf.com")
+  .addFormDataPart("hash","0efabb55d7faa9ed0ca7a0ff9267617e")
+  .build();
+Request request = new Request.Builder()
+  .url("https://dev2-api-dev.rafinita.com/post")
+  .method("POST", body)
+  .build();
+Response response = client.newCall(request).execute();
+```
+{% endtab %}
+
 {% tab title="HTTP" %}
 ```http
 POST /api/v1/session HTTP/1.1
