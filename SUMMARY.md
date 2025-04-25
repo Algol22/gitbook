@@ -10,7 +10,7 @@
 
 * [Checkout Integration](checkout/checkout-integration/README.md)
   * [Payment methods](checkout/checkout-integration/payment-methods.md)
-* [Checkout Requests](checkout/openapi.md)
+  * [Checkout Requests](checkout/checkout-integration/openapi.md)
 
 ## Tools
 

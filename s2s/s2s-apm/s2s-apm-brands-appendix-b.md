@@ -147,7 +147,7 @@ You have to add to your SALE request specific list of parameters which is determ
 
 You should get additional information from account manager.
 
-#### vcard
+### vcard
 
 To make payments on Test connector kindly set the value “vcard” for the `brand` parameter.
 
