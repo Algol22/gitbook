@@ -1,3 +1,7 @@
+---
+icon: google-pay
+---
+
 # S2S APM Brands (Appendix B)
 
 Version: 3.6.2\
@@ -147,7 +151,7 @@ You have to add to your SALE request specific list of parameters which is determ
 
 You should get additional information from account manager.
 
-### vcard
+## vcard
 
 To make payments on Test connector kindly set the value “vcard” for the `brand` parameter.
 
@@ -166,7 +170,7 @@ return_url=https://client.site.com/return.php&hash=2702ae0c4f99506dc29b5615ba9ee
 
 To simulate success scenario use `identifier` parameter value success@gmail.com and fail@gmail.com for decline.
 
-#### Apple Pay
+## Apple Pay
 
 To use the Apple Pay payment method, configure the Wallets setting in the admin dashboard. Ensure that the payment provider has confirmed the Apple Pay certificates and verified your domain in the Apple Pay account.
 
@@ -280,7 +284,7 @@ curl -d "action=SALE&client_key=c2b8fb04-110f-11ea-bcd3-0242c0a85004&brand=axxi-
 
 </details>
 
-#### beeline
+## beeline
 
 | **Parameter**     | **Description**                          | **Values** | **Required** |
 | ----------------- | ---------------------------------------- | ---------- | :----------: |
